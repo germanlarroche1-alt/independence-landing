@@ -6,7 +6,6 @@ import {
   WhatYouGet,
   WhoThisIsFor,
   MeetEmily,
-  ProcessSection,
   TestimonialsSection,
   ResultadoSection,
   PricingSection,
@@ -26,7 +25,6 @@ const Index = () => (
     <WhatYouGet />
     <WhoThisIsFor />
     <MeetEmily />
-    <ProcessSection />
     <TestimonialsSection />
     <ResultadoSection />
     <PricingSection />
