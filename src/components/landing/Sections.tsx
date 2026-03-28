@@ -14,14 +14,12 @@ const beforeItems = [
   "Only 3 days of food at home",
   "Stressed every time prices rise",
   "Dependent on supply chains you can't control",
-  "No system, no backup plan",
 ];
 const afterItems = [
   "3 full days of food security for just $23",
   "Save $150–$300 every month",
   "Calm and prepared at all times",
   "Producing your own food at home",
-  "A real system that compounds",
 ];
 
 export const PainSection = () => (
@@ -62,6 +60,7 @@ export const MechanismSection = () => (
   <section className="section-padding">
     <div className="section-container">
       <img src={IMAGES.sistema23} alt="The $23 Starter Kit" loading="lazy" className="w-full rounded-xl mb-8" />
+      <p className="text-accent text-[14px] text-center font-medium mb-2">This is where most people start</p>
       <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-4 text-center">
         It starts with $23. Tonight.
       </h2>
@@ -104,12 +103,8 @@ export const SocialProofNumbers = () => (
 const features = [
   { icon: "🌱", title: "Your First 24 Hours", desc: "Build 3 days of food security starting tonight" },
   { icon: "💰", title: "The $23 Starter Kit", desc: "Exact shopping list with prices" },
-  { icon: "📋", title: "15-Minute Pantry Audit", desc: "Know exactly where you stand" },
-  { icon: "🥗", title: "The $67 Week", desc: "7 full days of real meals for a family of 4" },
-  { icon: "🌿", title: "Your First Food Source", desc: "Fastest crops with results in 7 days" },
-  { icon: "📈", title: "The Money Shift", desc: "How families save $150–$300/month" },
   { icon: "📅", title: "7-Day Action Plan", desc: "Day by day, step by step" },
-  { icon: "🔄", title: "The Control Loop", desc: "Simple repeatable system for life" },
+  { icon: "🥗", title: "The $67 Week", desc: "7 full days of real meals for a family of 4" },
 ];
 
 export const WhatYouGet = () => (
@@ -121,7 +116,7 @@ export const WhatYouGet = () => (
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {features.map((f) => (
-          <div key={f.title} className="bg-card rounded-xl p-4 border border-border flex gap-3 items-start">
+          <div key={f.title} className="bg-card rounded-xl p-4 pl-4 md:pl-4 border border-border flex gap-3 items-center md:items-start">
             <span className="text-2xl">{f.icon}</span>
             <div>
               <div className="font-semibold text-primary">{f.title}</div>
@@ -187,37 +182,6 @@ export const MeetEmily = () => (
             ))}
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-);
-
-const steps = [
-  { day: "Day 1", text: "Pantry audit + buy the $23 Starter Kit" },
-  { day: "Day 3", text: "Buy the $67 Week — full 7-day food foundation" },
-  { day: "Day 4–5", text: "Set up your first growing space and plant first crop" },
-  { day: "Day 7", text: "You are no longer dependent. You are prepared." },
-];
-
-export const ProcessSection = () => (
-  <section className="section-padding bg-card">
-    <div className="section-container">
-      <img src={IMAGES.proceso} alt="Growing microgreens at home" loading="lazy" className="w-full rounded-xl mb-8" />
-      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-8 text-center">
-        Your Results Timeline
-      </h2>
-      <div className="space-y-4 max-w-lg mx-auto">
-        {steps.map((s, i) => (
-          <div key={s.day} className="flex gap-4 items-start">
-            <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm shrink-0">
-              {i + 1}
-            </div>
-            <div>
-              <div className="font-bold text-primary">{s.day}</div>
-              <div className="text-sm text-foreground/80">{s.text}</div>
-            </div>
-          </div>
-        ))}
       </div>
     </div>
   </section>
@@ -291,7 +255,7 @@ export const TestimonialsSection = () => (
 
 export const ResultadoSection = () => (
   <section className="relative">
-    <img src={IMAGES.resultado} alt="Stocked pantry showing food independence" loading="lazy" className="w-full h-[50vh] md:h-[60vh] object-cover" />
+    <img src={IMAGES.resultado} alt="Stocked pantry showing food independence" loading="lazy" className="w-full object-cover object-bottom" style={{ maxHeight: "350px" }} />
     <div className="absolute inset-0 bg-primary/50 flex flex-col items-center justify-center text-center px-4">
       <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary-foreground mb-2">
         Tonight… you're covered.
@@ -395,6 +359,7 @@ export const FinalCTA = () => (
         You don't need more information. You need a system. This is it.
       </p>
       <CTAButton className="!bg-accent !text-accent-foreground" />
+      <p className="text-white text-[14px] italic text-center mt-3">Every day you wait, food gets more expensive. Start today.</p>
       <div className="trust-badges mt-3 text-primary-foreground/70">
         <span>🔒 Secure Payment</span>
         <span>✓ 7-Day Guarantee</span>

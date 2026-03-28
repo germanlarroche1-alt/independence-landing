@@ -26,7 +26,6 @@ const Index = () => (
     <WhatYouGet />
     <WhoThisIsFor />
     <MeetEmily />
-    <ProcessSection />
     <TestimonialsSection />
     <ResultadoSection />
     <PricingSection />
