@@ -276,8 +276,8 @@ export const PricingSection = () => (
       <div className="bg-background rounded-xl p-6 border border-border max-w-md mx-auto mb-6">
         <div className="space-y-2 text-left text-sm mb-4">
           <div className="flex justify-between"><span>The 7-Day Food Independence Starter System</span><span className="line-through text-muted-foreground">$49</span></div>
-          <div className="flex justify-between"><span>The $23 Starter Kit Guide (BONUS)</span><span className="line-through text-muted-foreground">$15</span></div>
-          <div className="flex justify-between"><span>The $67 Week Shopping System (BONUS)</span><span className="line-through text-muted-foreground">$15</span></div>
+          <div className="flex justify-between"><span>The Bulk Buying Cheat Sheet (BONUS)</span><span className="line-through text-muted-foreground">$15</span></div>
+          <div className="flex justify-between"><span>The Lights Out Cooking Guide (BONUS)</span><span className="line-through text-muted-foreground">$15</span></div>
           <hr className="border-border" />
           <div className="flex justify-between font-semibold"><span>Total Real-World Value:</span><span>$79+</span></div>
         </div>
