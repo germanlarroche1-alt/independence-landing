@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import System from "./pages/System.tsx";
 
 const queryClient = new QueryClient();
 
