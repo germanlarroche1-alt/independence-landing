@@ -68,7 +68,7 @@ const styles = {
   stickyText: { color: C.gold, fontSize: "13px", fontWeight: 700, letterSpacing: ".5px" },
   sDark: { background: C.green, padding: "64px 20px 72px" },
   sCream: { background: C.cream, padding: "64px 20px 72px" },
-  sDarker: { background: C.greenDark, padding: "64px 20px 100px" },
+  sDarker: { background: C.greenDark, padding: "64px 20px 120px" },
   container: { maxWidth: "560px", margin: "0 auto", textAlign: "center" as const },
   label: {
     fontFamily: "'Inter', sans-serif", fontSize: "11px", fontWeight: 700,
