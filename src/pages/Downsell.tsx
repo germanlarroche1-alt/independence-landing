@@ -370,10 +370,6 @@ export default function DownsellPage() {
           </div>
 
           <div className="ds-divider"><hr/></div>
-
-          <div className="ds-book-wrap">
-            <img src={IMG_EBOOK} alt="6-Month Food Independence System eBook" loading="lazy" />
-          </div>
         </div>
       </section>
 
@@ -415,7 +411,6 @@ export default function DownsellPage() {
             <span className="ds-bonus-val">$67 value</span>
           </div>
 
-          {/* Testimonial */}
           <div className="ds-testi">
             <div className="ds-testi-header">
               <img src={IMG_AVATAR} alt="Jennifer M." className="ds-avatar" />
@@ -481,7 +476,7 @@ export default function DownsellPage() {
           <button className="ds-btn-main" onClick={handleCTA}>
             🔥 Get the Full 6-Month System — Final Offer $8
           </button>
-          <button className="ds-decline" onClick={() => window.location.href = "/"}>
+          <button className="ds-decline" onClick={() => window.location.href = "/"} style={{ textAlign: "center", display: "block", width: "100%" }}>
             No thanks — I'll leave without it and continue
           </button>
           <div className="ds-badges">
