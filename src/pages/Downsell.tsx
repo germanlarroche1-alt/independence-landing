@@ -68,7 +68,7 @@ const styles = {
   stickyText: { color: C.gold, fontSize: "13px", fontWeight: 700, letterSpacing: ".5px" },
   sDark: { background: C.green, padding: "64px 20px 72px" },
   sCream: { background: C.cream, padding: "64px 20px 72px" },
-  sDarker: { background: C.greenDark, padding: "64px 20px 100px" },
+  sDarker: { background: C.greenDark, padding: "64px 20px 120px" },
   container: { maxWidth: "560px", margin: "0 auto", textAlign: "center" as const },
   label: {
     fontFamily: "'Inter', sans-serif", fontSize: "11px", fontWeight: 700,
@@ -94,6 +94,7 @@ const styles = {
   bookImg: {
     maxWidth: "190px", width: "100%", borderRadius: "8px",
     border: `2px solid ${C.gold}`, boxShadow: "0 20px 60px rgba(0,0,0,.5)",
+    display: "block" as const, margin: "0 auto",
   },
   btnMain: {
     display: "block", background: C.gold, color: C.greenDark,
