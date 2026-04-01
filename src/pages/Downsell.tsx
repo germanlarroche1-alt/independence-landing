@@ -476,7 +476,7 @@ export default function DownsellPage() {
           <button className="ds-btn-main" onClick={handleCTA}>
             🔥 Get the Full 6-Month System — Final Offer $8
           </button>
-          <button className="ds-decline" onClick={() => window.location.href = "/"}>
+          <button className="ds-decline" onClick={() => window.location.href = "/"} style={{ textAlign: "center", display: "block", width: "100%" }}>
             No thanks — I'll leave without it and continue
           </button>
           <div className="ds-badges">
