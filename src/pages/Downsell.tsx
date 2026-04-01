@@ -357,10 +357,10 @@ export default function DownsellPage() {
 
           <div id="hotmart-widget-zone" style={{ margin: "0 auto 24px", maxWidth: "440px" }} />
 
-          <button className="ds-btn-main" onClick={handleCTA}>
+          <button className="ds-btn-main" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
             🔥 Yes — Complete My System for $8
           </button>
-          <button className="ds-decline" onClick={() => window.location.href = "/"}>
+          <button className="ds-decline" onClick={(e) => e.preventDefault()}>
             No thanks, I'll stay with just 7 days of coverage
           </button>
           <div className="ds-badges">
