@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-const IMG_PANTRY_FULL = "https://res.cloudinary.com/dljy2fp3w/image/upload/v1774923535/IMAGEN_5_PANTRY_LLENO_6_MESES_ve6ohf.png";
-const IMG_LOOP        = "https://res.cloudinary.com/dljy2fp3w/image/upload/v1774923535/imagen_2_self_suficiency_iku5ih.png";
-const IMG_JARS        = "https://res.cloudinary.com/dljy2fp3w/image/upload/v1774924952/Hyperrealistic_close-up_photo_of_mason_jars_lmpoiq.png";
-const IMG_EMILY       = "https://res.cloudinary.com/dljy2fp3w/image/upload/v1774924684/PROMPT_3_EMILY_EN_COCINA_jsfsas.png";
-const IMG_FAMILY      = "https://res.cloudinary.com/dljy2fp3w/image/upload/v1774923535/IMAGEN_3_FAMILIA_TRANQUILA_EN_COCINA_edmt4a.png";
-const IMG_EBOOK_COVER = "https://res.cloudinary.com/dljy2fp3w/image/upload/v1774924683/PROMPT_1_PORTADA_EBOOK_UPSELL_nutdvp.png";
+const IMG_PANTRY_FULL = "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_800/v1774923535/IMAGEN_5_PANTRY_LLENO_6_MESES_ve6ohf.png";
+const IMG_LOOP        = "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_800/v1774923535/imagen_2_self_suficiency_iku5ih.png";
+const IMG_JARS        = "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_800/v1774924952/Hyperrealistic_close-up_photo_of_mason_jars_lmpoiq.png";
+const IMG_EMILY       = "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_800/v1774924684/PROMPT_3_EMILY_EN_COCINA_jsfsas.png";
+const IMG_FAMILY      = "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_800/v1774923535/IMAGEN_3_FAMILIA_TRANQUILA_EN_COCINA_edmt4a.png";
+const IMG_EBOOK_COVER = "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_800/v1774924683/PROMPT_1_PORTADA_EBOOK_UPSELL_nutdvp.png";
 const VIDEO_URL       = "https://www.youtube.com/embed/ZdLhPmY_mvQ?si=xR0J3QYWJZXrzRM0&autoplay=1&rel=0&modestbranding=1";
 
 const C = {
