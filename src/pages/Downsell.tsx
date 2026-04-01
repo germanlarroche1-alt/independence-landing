@@ -31,6 +31,33 @@ function SEOHead() {
   return null;
 }
 
+function HotmartWidget() {
+  useEffect(() => {
+    if (document.querySelector('script[src*="hotmart-checkout-elements"]')) {
+      if ((window as any).checkoutElements) {
+        try { (window as any).checkoutElements.init("salesFunnel").mount("#hotmart-sales-funnel"); } catch (e) {}
+      }
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "https://checkout.hotmart.com/lib/hotmart-checkout-elements.js";
+    script.async = true;
+    script.onload = () => {
+      if ((window as any).checkoutElements) {
+        try { (window as any).checkoutElements.init("salesFunnel").mount("#hotmart-sales-funnel"); } catch (e) {}
+      }
+    };
+    document.body.appendChild(script);
+  }, []);
+  return (
+    <div
+      id="hotmart-sales-funnel"
+      aria-label="Secure checkout"
+      style={{ width: "100%", maxWidth: "440px", margin: "0 auto 24px" }}
+    />
+  );
+}
+
 function Countdown() {
   const [seconds, setSeconds] = useState(15 * 60 - 1);
   useEffect(() => {
@@ -355,9 +382,7 @@ export default function DownsellPage() {
             <img src={IMG_EBOOK} alt="6-Month Food Independence System eBook cover" loading="lazy" />
           </div>
 
-          <div id="hotmart-sales-funnel" style={{ minHeight: "80px", width: "100%", maxWidth: "440px", margin: "0 auto 24px" }} />
-
-          <div id="hotmart-widget-zone" style={{ margin: "0 auto 24px", maxWidth: "440px" }} />
+          <HotmartWidget />
 
           <button className="ds-btn-main" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
             🔥 Yes — Complete My System for $8
