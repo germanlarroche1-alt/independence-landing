@@ -473,10 +473,10 @@ export default function DownsellPage() {
             <p>Your $8 pays for itself the first time you skip a grocery run.</p>
           </div>
 
-          <button className="ds-btn-main" onClick={handleCTA}>
+          <button className="ds-btn-main" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
             🔥 Get the Full 6-Month System — Final Offer $8
           </button>
-          <button className="ds-decline" onClick={() => window.location.href = "/"} style={{ textAlign: "center", display: "block", width: "100%" }}>
+          <button className="ds-decline" onClick={(e) => e.preventDefault()} style={{ textAlign: "center", display: "block", width: "100%" }}>
             No thanks — I'll leave without it and continue
           </button>
           <div className="ds-badges">
