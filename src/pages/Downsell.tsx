@@ -245,6 +245,14 @@ export default function DownsellPage() {
       {/* HERO SECTION */}
       <section style={styles.sDark}>
         <div style={styles.container}>
+          <div style={styles.bookWrap}>
+            <img
+              src={IMG_EBOOK}
+              alt="6-Month Food Independence System eBook cover"
+              style={styles.bookImg}
+              loading="lazy"
+            />
+          </div>
           <span style={styles.label}>WAIT — ONE LAST THING</span>
           <h1 style={styles.h1}>
             You Almost Have a Complete System.<br />
@@ -258,14 +266,6 @@ export default function DownsellPage() {
             This is the final offer: <b>$8</b>. One click. Right now.<br />
             <b>This page disappears when you leave — permanently.</b>
           </p>
-          <div style={styles.bookWrap}>
-            <img
-              src={IMG_EBOOK}
-              alt="6-Month Food Independence System eBook cover"
-              style={styles.bookImg}
-              loading="lazy"
-            />
-          </div>
           <button style={styles.btnMain} onClick={handleCTA}>
             🔥 Yes — Complete My System for $8
           </button>
