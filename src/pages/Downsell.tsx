@@ -71,6 +71,10 @@ const globalCSS = `
   animation: slideDown .4s ease;
 }
 .ds-sticky-bar span { color: var(--gold); font-size: 13px; font-weight: 700; letter-spacing: .5px; }
+@media (max-width: 480px) {
+  .ds-sticky-bar { padding: 8px 16px; }
+  .ds-sticky-bar span { font-size: 11px; letter-spacing: .3px; white-space: nowrap; }
+}
 
 .ds-s-dark { background: var(--green); padding: 64px 20px 72px; }
 .ds-s-cream { background: var(--cream); padding: 64px 20px 72px; }
@@ -168,8 +172,8 @@ const globalCSS = `
   border-radius: 12px; padding: 16px;
 }
 .ds-feature-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
-.ds-feature-title { color: #fff; font-size: 14px; font-weight: 700; margin-bottom: 3px; }
-.ds-feature-desc { color: var(--gold); font-size: 12px; line-height: 1.5; }
+.ds-feature-title { color: #1B4332; font-size: 14px; font-weight: 700; margin-bottom: 3px; }
+.ds-feature-desc { color: #4a6a56; font-size: 12px; line-height: 1.5; }
 
 .ds-modules {
   display: flex; flex-direction: column; gap: 8px;
