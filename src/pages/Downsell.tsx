@@ -71,6 +71,10 @@ const globalCSS = `
   animation: slideDown .4s ease;
 }
 .ds-sticky-bar span { color: var(--gold); font-size: 13px; font-weight: 700; letter-spacing: .5px; }
+@media (max-width: 480px) {
+  .ds-sticky-bar { padding: 8px 16px; }
+  .ds-sticky-bar span { font-size: 11px; letter-spacing: .3px; white-space: nowrap; }
+}
 
 .ds-s-dark { background: var(--green); padding: 64px 20px 72px; }
 .ds-s-cream { background: var(--cream); padding: 64px 20px 72px; }
