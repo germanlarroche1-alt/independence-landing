@@ -172,8 +172,8 @@ const globalCSS = `
   border-radius: 12px; padding: 16px;
 }
 .ds-feature-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
-.ds-feature-title { color: #fff; font-size: 14px; font-weight: 700; margin-bottom: 3px; }
-.ds-feature-desc { color: var(--gold); font-size: 12px; line-height: 1.5; }
+.ds-feature-title { color: #1B4332; font-size: 14px; font-weight: 700; margin-bottom: 3px; }
+.ds-feature-desc { color: #4a6a56; font-size: 12px; line-height: 1.5; }
 
 .ds-modules {
   display: flex; flex-direction: column; gap: 8px;
