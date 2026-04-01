@@ -411,7 +411,6 @@ export default function DownsellPage() {
             <span className="ds-bonus-val">$67 value</span>
           </div>
 
-          {/* Testimonial */}
           <div className="ds-testi">
             <div className="ds-testi-header">
               <img src={IMG_AVATAR} alt="Jennifer M." className="ds-avatar" />
