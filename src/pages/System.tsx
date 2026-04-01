@@ -211,7 +211,7 @@ export default function SystemPage() {
         <section aria-labelledby="hero-heading" style={{ background: C.green, padding: "44px 20px 56px", textAlign: "center" }}>
           <SectionLabel text="One-Time Offer · New Members Only · Launch Price" />
           <div style={{ maxWidth: "640px", margin: "0 auto 28px" }}>
-            <Img src={IMG_FAMILY} alt="American family in kitchen with organized full pantry" priority style={{ maxHeight: "260px" }} />
+            <Img src={IMG_FAMILY} alt="American family in kitchen with organized full pantry" priority style={{ objectFit: "contain" }} />
           </div>
           <h1
             id="hero-heading"
