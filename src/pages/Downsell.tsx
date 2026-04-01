@@ -94,6 +94,7 @@ const styles = {
   bookImg: {
     maxWidth: "190px", width: "100%", borderRadius: "8px",
     border: `2px solid ${C.gold}`, boxShadow: "0 20px 60px rgba(0,0,0,.5)",
+    display: "block" as const, margin: "0 auto",
   },
   btnMain: {
     display: "block", background: C.gold, color: C.greenDark,
