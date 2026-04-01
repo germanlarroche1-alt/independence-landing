@@ -382,9 +382,7 @@ export default function DownsellPage() {
             <img src={IMG_EBOOK} alt="6-Month Food Independence System eBook cover" loading="lazy" />
           </div>
 
-          <div id="hotmart-sales-funnel" style={{ minHeight: "80px", width: "100%", maxWidth: "440px", margin: "0 auto 24px" }} />
-
-          <div id="hotmart-widget-zone" style={{ margin: "0 auto 24px", maxWidth: "440px" }} />
+          <HotmartWidget />
 
           <button className="ds-btn-main" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
             🔥 Yes — Complete My System for $8
