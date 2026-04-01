@@ -370,10 +370,6 @@ export default function DownsellPage() {
           </div>
 
           <div className="ds-divider"><hr/></div>
-
-          <div className="ds-book-wrap">
-            <img src={IMG_EBOOK} alt="6-Month Food Independence System eBook" loading="lazy" />
-          </div>
         </div>
       </section>
 
