@@ -442,10 +442,10 @@ export default function DownsellPage() {
             </div>
           </div>
 
-          <button className="ds-btn-cream" onClick={handleCTA}>
+          <button className="ds-btn-cream" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
             🔥 Yes — I'll Take the $8 Offer
           </button>
-          <button className="ds-decline ds-decline-cream" onClick={() => window.location.href = "/"}>
+          <button className="ds-decline ds-decline-cream" onClick={(e) => e.preventDefault()}>
             No thanks — I'll pass on this and continue
           </button>
           <div className="ds-badges">
