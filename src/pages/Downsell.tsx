@@ -506,7 +506,7 @@ export default function DownsellPage() {
           <div className="ds-float-price">$8</div>
           <div className="ds-float-label">Final offer — gone when you leave</div>
         </div>
-        <button className="ds-float-btn" onClick={handleCTA}>
+        <button className="ds-float-btn" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
           🔥 Complete My System — $8
         </button>
       </div>
