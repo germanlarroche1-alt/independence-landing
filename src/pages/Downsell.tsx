@@ -498,6 +498,8 @@ export default function DownsellPage() {
             <p>Your $8 pays for itself the first time you skip a grocery run.</p>
           </div>
 
+          <HotmartWidget />
+
           <button className="ds-btn-main" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
             🔥 Get the Full 6-Month System — Final Offer $8
           </button>
