@@ -31,6 +31,33 @@ function SEOHead() {
   return null;
 }
 
+function HotmartWidget() {
+  useEffect(() => {
+    if (document.querySelector('script[src*="hotmart-checkout-elements"]')) {
+      if ((window as any).checkoutElements) {
+        try { (window as any).checkoutElements.init("salesFunnel").mount("#hotmart-sales-funnel"); } catch (e) {}
+      }
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "https://checkout.hotmart.com/lib/hotmart-checkout-elements.js";
+    script.async = true;
+    script.onload = () => {
+      if ((window as any).checkoutElements) {
+        try { (window as any).checkoutElements.init("salesFunnel").mount("#hotmart-sales-funnel"); } catch (e) {}
+      }
+    };
+    document.body.appendChild(script);
+  }, []);
+  return (
+    <div
+      id="hotmart-sales-funnel"
+      aria-label="Secure checkout"
+      style={{ width: "100%", maxWidth: "440px", margin: "0 auto 24px" }}
+    />
+  );
+}
+
 function Countdown() {
   const [seconds, setSeconds] = useState(15 * 60 - 1);
   useEffect(() => {
