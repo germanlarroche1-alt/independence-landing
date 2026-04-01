@@ -357,10 +357,10 @@ export default function DownsellPage() {
 
           <div id="hotmart-widget-zone" style={{ margin: "0 auto 24px", maxWidth: "440px" }} />
 
-          <button className="ds-btn-main" onClick={handleCTA}>
+          <button className="ds-btn-main" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
             🔥 Yes — Complete My System for $8
           </button>
-          <button className="ds-decline" onClick={() => window.location.href = "/"}>
+          <button className="ds-decline" onClick={(e) => e.preventDefault()}>
             No thanks, I'll stay with just 7 days of coverage
           </button>
           <div className="ds-badges">
@@ -442,10 +442,10 @@ export default function DownsellPage() {
             </div>
           </div>
 
-          <button className="ds-btn-cream" onClick={handleCTA}>
+          <button className="ds-btn-cream" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
             🔥 Yes — I'll Take the $8 Offer
           </button>
-          <button className="ds-decline ds-decline-cream" onClick={() => window.location.href = "/"}>
+          <button className="ds-decline ds-decline-cream" onClick={(e) => e.preventDefault()}>
             No thanks — I'll pass on this and continue
           </button>
           <div className="ds-badges">
@@ -473,10 +473,10 @@ export default function DownsellPage() {
             <p>Your $8 pays for itself the first time you skip a grocery run.</p>
           </div>
 
-          <button className="ds-btn-main" onClick={handleCTA}>
+          <button className="ds-btn-main" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
             🔥 Get the Full 6-Month System — Final Offer $8
           </button>
-          <button className="ds-decline" onClick={() => window.location.href = "/"} style={{ textAlign: "center", display: "block", width: "100%" }}>
+          <button className="ds-decline" onClick={(e) => e.preventDefault()} style={{ textAlign: "center", display: "block", width: "100%" }}>
             No thanks — I'll leave without it and continue
           </button>
           <div className="ds-badges">
@@ -506,7 +506,7 @@ export default function DownsellPage() {
           <div className="ds-float-price">$8</div>
           <div className="ds-float-label">Final offer — gone when you leave</div>
         </div>
-        <button className="ds-float-btn" onClick={handleCTA}>
+        <button className="ds-float-btn" onClick={() => document.getElementById('hotmart-sales-funnel')?.scrollIntoView({behavior: 'smooth'})}>
           🔥 Complete My System — $8
         </button>
       </div>
