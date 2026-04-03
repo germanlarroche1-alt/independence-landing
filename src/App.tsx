@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound.tsx";
 import System from "./pages/System.tsx";
 import Downsell from "./pages/Downsell.tsx";
 import ThankYou from "./pages/ThankYou.tsx";
+import ThankYouStart from "./pages/ThankYouStart.tsx";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/system" element={<System />} />
           <Route path="/downsell" element={<Downsell />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/thank-you-start" element={<ThankYouStart />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
