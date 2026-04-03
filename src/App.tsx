@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound.tsx";
 import System from "./pages/System.tsx";
 import Downsell from "./pages/Downsell.tsx";
 import ThankYou from "./pages/ThankYou.tsx";
+import ThankYouStart from "./pages/ThankYouStart.tsx";
 
 const queryClient = new QueryClient();
 
