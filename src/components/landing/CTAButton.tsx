@@ -7,9 +7,6 @@ declare global {
 const CHECKOUT_URL = "https://pay.hotmart.com/V105038659J?checkoutMode=10";
 
 export const handleCTAClick = () => {
-  if (window.fbq) {
-    window.fbq('track', 'InitiateCheckout');
-  }
   window.location.href = CHECKOUT_URL;
 };
 
