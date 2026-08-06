@@ -22,6 +22,33 @@ const afterItems = [
   "Producing your own food at home",
 ];
 
+export const VillainSection = () => (
+  <section className="section-padding bg-background">
+    <div className="section-container text-center max-w-2xl mx-auto">
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-6">
+        The Grocery Store Is Not On Your Side.
+      </h2>
+      <p className="text-foreground/80 mb-4">
+        Prices up 47% in 4 years.<br />
+        Shelves empty during storms.<br />
+        Supply chains breaking without warning.
+      </p>
+      <p className="text-foreground/80 mb-4">
+        The average American family spends $1,300/month on groceries — and still only has 3 days of food at home.
+      </p>
+      <p className="font-semibold text-primary mb-4">That's not bad luck. That's dependency.</p>
+      <p className="text-foreground/80 mb-4">
+        Food Independence isn't about fear.<br />
+        It's about having a plan before you need one.
+      </p>
+      <p className="text-foreground/80">
+        Most families don't have a plan.<br />
+        You're about to change that.
+      </p>
+    </div>
+  </section>
+);
+
 export const PainSection = () => (
   <section className="section-padding bg-card">
     <div className="section-container">
