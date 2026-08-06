@@ -4,6 +4,7 @@ import {
   MechanismSection,
   SocialProofNumbers,
   WhatYouGet,
+  BonusSection,
   WhoThisIsFor,
   MeetEmily,
   TestimonialsSection,
@@ -23,6 +24,7 @@ const Index = () => (
     <MechanismSection />
     <SocialProofNumbers />
     <WhatYouGet />
+    <BonusSection />
     <WhoThisIsFor />
     <MeetEmily />
     <TestimonialsSection />
