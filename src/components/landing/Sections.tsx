@@ -438,7 +438,7 @@ export const GuaranteeSection = () => (
 const faqs = [
   { q: "Can I use this if I live in a small apartment?", a: "Absolutely. This system was specifically designed for small spaces. You only need a windowsill, a few pots, and a small shelf for storage. Most of our 5,000+ readers started in apartments smaller than yours." },
   { q: "Do I need a big yard or land?", a: "No. This system works in any space — apartment, balcony, or a single windowsill. Most families start with just a few pots and a shelf." },
-  { q: "How much can I realistically save?", a: "Most families save between $150–$300/month after 90 days. You start seeing results in week 1." },
+  { q: "How much can I realistically save?", a: "Many families report saving $150–$300/month after 90 days of running the system consistently. Results vary based on family size and current spending — but most see savings starting in week 1." },
   { q: "Is it beginner-friendly?", a: "Completely. The system was designed for people with zero experience. Step-by-step, day by day." },
   { q: "What format do I receive?", a: "Instant digital access to a PDF guide. Download it immediately after purchase." },
   { q: "When will I see results?", a: "Day 1 you build your first 3 days of food security. Week 1 you have your first crop planted. Week 3 you start seeing grocery savings." },
