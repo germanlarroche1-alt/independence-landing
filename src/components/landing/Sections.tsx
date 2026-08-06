@@ -188,9 +188,12 @@ export const WhatYouGet = () => (
   <section className="section-padding">
     <div className="section-container">
       <img src={IMAGES.mockup} alt="The 7-Day Food Independence Starter System ebook" loading="lazy" className="w-64 md:w-80 mx-auto mb-8" />
-      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-8 text-center">
-        What's Inside the 7-Day Food Independence Starter System
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-3 text-center">
+        Here's Everything You'll Build in Just 7 Days
       </h2>
+      <p className="text-foreground/80 text-center max-w-2xl mx-auto mb-8">
+        Every day develops a different part of your system. By the end you'll have something most families never build: A real food plan. That actually works.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {features.map((f) => (
           <div key={f.title} className="bg-card rounded-xl p-4 pl-4 md:pl-4 border border-border flex gap-3 items-center md:items-start">
