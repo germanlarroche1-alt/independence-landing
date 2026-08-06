@@ -12,7 +12,7 @@ export const handleCTAClick = () => {
 
 export const CTAButton = ({ className = "" }: { className?: string }) => (
   <button onClick={handleCTAClick} className={`cta-button ${className}`}>
-    🔥 Get Instant Access for $12
+    👉 Get The 7-Day Food Independence System — Only $12 →
   </button>
 );
 
