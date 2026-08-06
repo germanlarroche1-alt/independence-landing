@@ -222,32 +222,18 @@ export const MeetEmily = () => (
 
 const testimonials = [
   {
-    name: "Megan L.",
-    location: "Austin, TX",
-    badge: "$60/month",
-    img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/Megan_L._Austin_TX_whwt1j.png",
-    quote: "I've cut my grocery bill by $60 a month just growing herbs on my apartment balcony. I can't believe I didn't start earlier. This guide made it so simple.",
-  },
-  {
-    name: "James R.",
+    name: "Jennifer M.",
     location: "Portland, OR",
-    badge: "$180/month",
+    badge: "Saving $200/month",
+    img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/Megan_L._Austin_TX_whwt1j.png",
+    quote: "We started with 4 days of food. After 3 months running this system, we have 6 weeks stored, herbs on the windowsill, and we spend $200 less a month. I don't dread the grocery store anymore.",
+  },
+  {
+    name: "Marcus T.",
+    location: "Chicago, IL",
+    badge: "0 → 30 days food security",
     img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/JAMES_R._PORTLAND_OR_fhtgvl.png",
-    quote: "Zero experience, but this made everything feel easy. I'm now growing 80% of my salad greens indoors. So grateful for this guide.",
-  },
-  {
-    name: "Ashley P.",
-    location: "Brooklyn, NY",
-    badge: "$120/month",
-    img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/TESTIMONIO_3_ASHLEY_P._BROOKLYN_NY_bk8is2.png",
-    quote: "I started growing herbs in my tiny studio. I feel healthier, more in control, and I'm saving money every single week.",
-  },
-  {
-    name: "David M.",
-    location: "Denver, CO",
-    badge: "$80/month",
-    img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631254/testimonio_4_mqaaay.png",
-    quote: "This guide helped me understand food independence. I've already reduced my grocery bill by $80/month. Best $12 I've ever spent.",
+    quote: "I live in a one-bedroom apartment. I started with a windowsill herb kit. Six weeks later I have a month of pantry food, fresh herbs every day, and 14 gallons of water under my bed.",
   },
 ];
 
