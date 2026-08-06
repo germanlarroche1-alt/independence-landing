@@ -209,20 +209,49 @@ export const WhatYouGet = () => (
   </section>
 );
 
+const accomplishItems = [
+  "Know exactly how many days of food your family has — today",
+  "Build your first real emergency food foundation",
+  "Organize your pantry like a system, not a storage room",
+  "Spend smarter at the grocery store starting this week",
+  "Start growing food in almost any space",
+  "Reduce what you spend — without reducing what you eat",
+  "Feel more prepared with every single week that passes",
+];
+
+export const AccomplishSection = () => (
+  <section className="section-padding">
+    <div className="section-container">
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-6 text-center">
+        What You'll Accomplish
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-2xl mx-auto">
+        {accomplishItems.map((item) => (
+          <div key={item} className="flex items-start gap-2">
+            <span className="text-secondary font-bold mt-0.5">✓</span>
+            <span className="text-sm">{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 const forYouItems = [
-  "You're tired of paying $400–$500/month for groceries",
-  "You live in an apartment or small home with limited space",
-  "You're new to food independence and need step-by-step guidance",
-  "You're concerned about food quality and supply chains",
-  "You want real results fast, not theory",
-  "You're ready to take control of your food and finances",
+  "You're tired of spending $400–$500/month on groceries",
+  "You live in an apartment, townhouse, or small home",
+  "You're concerned about rising prices and supply chains",
+  "You want real results fast — not theory",
+  "You want more control over what your family eats",
+  "You believe your family deserves better than 3 days of security",
+  "You're ready to stop depending on a system you can't control",
 ];
 
 export const WhoThisIsFor = () => (
   <section className="section-padding bg-card">
     <div className="section-container">
       <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-6 text-center">
-        This Is For You If...
+        This Is For You If You're Done Feeling Dependent.
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-2xl mx-auto">
         {forYouItems.map((item) => (
