@@ -83,6 +83,23 @@ export const PainSection = () => (
   </section>
 );
 
+export const NotAFarmerSection = () => (
+  <section className="section-padding bg-card">
+    <div className="section-container text-center max-w-2xl mx-auto">
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-6">
+        This Isn't About Becoming a Farmer.
+      </h2>
+      <p className="text-foreground/80 mb-4">
+        You don't need acres of land.<br />
+        You don't need expensive equipment.<br />
+        You don't need years of experience.
+      </p>
+      <p className="font-semibold text-primary mb-4">You need a system.</p>
+      <p className="text-foreground/80">That's exactly what you'll build in 7 days.</p>
+    </div>
+  </section>
+);
+
 export const MechanismSection = () => (
   <section className="section-padding">
     <div className="section-container">
