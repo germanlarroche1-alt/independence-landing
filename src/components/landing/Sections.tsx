@@ -360,7 +360,7 @@ export const TestimonialsSection = () => (
               </span>
             </div>
             <div className="text-accent text-sm mb-2">⭐⭐⭐⭐⭐</div>
-            <p className="text-sm text-foreground/80 italic">"{t.quote}"</p>
+            <p className="text-sm text-foreground/80 italic whitespace-pre-line">"{t.quote}"</p>
           </div>
         ))}
       </div>
