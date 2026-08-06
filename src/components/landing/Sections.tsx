@@ -471,23 +471,49 @@ export const FAQSection = () => {
 export const FinalCTA = () => (
   <section className="section-padding bg-primary text-primary-foreground">
     <div className="section-container text-center">
-      <h2 className="font-heading text-2xl md:text-4xl font-bold mb-4">
-        Start Building Your Food Independence Tonight
+      <h2 className="font-heading text-2xl md:text-4xl font-bold mb-6">
+        Start Building Your Food Independence Tonight.
       </h2>
-      <p className="opacity-90 mb-4">
-        Why pay $49–$79 for the same information? Get the full system today for just $12.
-      </p>
-      <p className="font-bold mb-6">
-        You don't need more information. You need a system. This is it.
-      </p>
+      <div className="opacity-90 mb-6 max-w-xl mx-auto space-y-4">
+        <p>
+          You don't need more information.<br />
+          You need a plan.<br />
+          This system gives you one.
+        </p>
+        <p>
+          Start with one grocery trip.<br />
+          One week.<br />
+          One simple system.<br />
+          One stronger family.
+        </p>
+        <p>
+          You're not preparing for the end of the world.<br />
+          You're preparing to take better care of your family.
+        </p>
+        <p>
+          One day.<br />
+          One grocery trip.<br />
+          One small habit at a time.
+        </p>
+        <p>
+          Imagine opening your pantry next week and knowing your family has a real food foundation already in place.
+        </p>
+        <p>
+          No panic.<br />
+          No guesswork.<br />
+          Just a simple system that works.
+        </p>
+        <p>
+          Your next grocery trip could be the first step toward spending smarter, building food security, and taking back control of your family's food.
+        </p>
+      </div>
       <CTAButton className="!bg-accent !text-accent-foreground" />
-      <p className="text-white text-[14px] italic text-center mt-3">Groceries cost 47% more than 4 years ago. Every week you wait, you overpay more. Start tonight for $12.</p>
       <div className="trust-badges mt-3 text-primary-foreground/70">
         <span>🔒 Secure Payment</span>
         <span>✓ 7-Day Guarantee</span>
         <span>⭐ 5,000+ Happy Readers</span>
       </div>
-      <p className="text-sm font-semibold mt-4 text-accent">⚡ This special price ends in 48 hours.</p>
+      <p className="text-sm font-semibold mt-4 text-accent">⚡ Groceries cost 47% more than 4 years ago. Every week you wait, you overpay more. Start tonight for $12.</p>
       <p className="mt-6 opacity-80 italic max-w-xl mx-auto text-sm">
         Tonight… you could already have 3 full days of real food sitting in your home. No stress. No panic. Just knowing… you're covered.
       </p>
