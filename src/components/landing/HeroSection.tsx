@@ -30,7 +30,7 @@ export const HeroSection = () => {
           <span className="text-accent">Here's How to Fix That — Tonight.</span>
         </h1>
         <p className="text-base md:text-xl text-foreground/80 mb-4 max-w-2xl mx-auto">
-          The simple $23 system that gives your family 3 days of real food security. Tonight.
+          The simple system that helps your family stop overpaying for groceries — and start building real food security at home. Starting tonight.
         </p>
 
         <div className="bg-card rounded-xl p-5 mb-4 max-w-lg mx-auto border border-border">

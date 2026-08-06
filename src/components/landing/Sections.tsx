@@ -103,9 +103,42 @@ export const SocialProofNumbers = () => (
 const features = [
   { icon: "🌱", title: "Your First 24 Hours", desc: "Build 3 days of food security starting tonight" },
   { icon: "💰", title: "The $23 Starter Kit", desc: "Exact shopping list with prices" },
-  { icon: "📅", title: "7-Day Action Plan", desc: "Day by day, step by step" },
-  { icon: "🥗", title: "The $67 Week", desc: "7 full days of real meals for a family of 4" },
+  { icon: "📊", title: "Reality Check", desc: "Find out exactly how many days of food your family has today" },
+  { icon: "🔄", title: "From Consumer to Producer", desc: "The mindset shift that changes everything" },
+  { icon: "🥬", title: "Your First Food Source", desc: "Grow real food at home — no garden or experience needed" },
+  { icon: "💵", title: "The Money Shift", desc: "How families save $150–$300/month on groceries" },
+  { icon: "📦", title: "Build Your 7-Day Foundation", desc: "Step-by-step pantry and storage system" },
+  { icon: "📅", title: "Your 7-Day Action Plan", desc: "The exact plan to follow starting today" },
+  { icon: "🔥", title: "BONUS: Bulk Buying Cheat Sheet", desc: "Cut your grocery bill on your very next shopping trip" },
+  { icon: "🔥", title: "BONUS: Lights Out Cooking Guide", desc: "Feed your family hot meals even without power" },
 ];
+
+const bonuses = [
+  { icon: "🔥", title: "The Bulk Buying Cheat Sheet", value: "$15 value — yours free", desc: "The exact products, quantities and stores to cut your grocery bill starting this week." },
+  { icon: "🔥", title: "The Lights Out Cooking Guide", value: "$15 value — yours free", desc: "How to feed your family hot meals even when the power goes out." },
+];
+
+export const BonusSection = () => (
+  <section className="section-padding">
+    <div className="section-container">
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-8 text-center">
+        Plus — You Also Get These FREE Bonuses:
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {bonuses.map((b) => (
+          <div key={b.title} className="bg-card rounded-xl p-4 border border-border flex gap-3 items-start">
+            <span className="text-2xl">{b.icon}</span>
+            <div>
+              <div className="font-semibold text-primary">{b.title}</div>
+              <div className="text-sm text-accent font-semibold">{b.value}</div>
+              <div className="text-sm text-muted-foreground">{b.desc}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
 export const WhatYouGet = () => (
   <section className="section-padding">
