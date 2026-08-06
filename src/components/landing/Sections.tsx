@@ -272,6 +272,16 @@ export const MeetEmily = () => (
         <img src={IMAGES.emily} alt="Emily Carter" loading="lazy" className="w-full md:w-1/3 rounded-xl mb-6 md:mb-0" />
         <div className="flex-1">
           <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-4">Meet Emily Carter</h2>
+          <div className="bg-card rounded-xl p-4 border-l-4 border-accent mb-6 italic text-sm text-foreground/70 whitespace-pre-line">
+            {`"I used to spend $340 a month on groceries for a family of three.
+
+Every week, prices went up.
+Every week, I felt less in control.
+Every week, I wondered what would happen if something went wrong.
+
+Then I built this system.
+In 7 days, everything changed."`}
+          </div>
           <p className="text-foreground/80 mb-4">
             Hi, I'm Emily Carter. For the past 8 years I've been helping families take control of their food — reducing grocery bills, building simple food systems at home, and becoming less dependent on stores and supply chains. I started from a small apartment balcony. Today I've helped 5,000+ families do the same.
           </p>
@@ -289,6 +299,10 @@ export const MeetEmily = () => (
                 <div className="text-xs text-muted-foreground">{s.label}</div>
               </div>
             ))}
+          </div>
+          <div className="mt-6 text-center">
+            <CTAButton />
+            <p className="text-sm text-accent font-semibold mt-3">⚡ Limited time price. Currently: $12.</p>
           </div>
         </div>
       </div>
