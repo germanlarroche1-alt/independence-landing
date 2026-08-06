@@ -103,9 +103,42 @@ export const SocialProofNumbers = () => (
 const features = [
   { icon: "🌱", title: "Your First 24 Hours", desc: "Build 3 days of food security starting tonight" },
   { icon: "💰", title: "The $23 Starter Kit", desc: "Exact shopping list with prices" },
-  { icon: "📅", title: "7-Day Action Plan", desc: "Day by day, step by step" },
-  { icon: "🥗", title: "The $67 Week", desc: "7 full days of real meals for a family of 4" },
+  { icon: "📊", title: "Reality Check", desc: "Find out exactly how many days of food your family has today" },
+  { icon: "🔄", title: "From Consumer to Producer", desc: "The mindset shift that changes everything" },
+  { icon: "🥬", title: "Your First Food Source", desc: "Grow real food at home — no garden or experience needed" },
+  { icon: "💵", title: "The Money Shift", desc: "How families save $150–$300/month on groceries" },
+  { icon: "📦", title: "Build Your 7-Day Foundation", desc: "Step-by-step pantry and storage system" },
+  { icon: "📅", title: "Your 7-Day Action Plan", desc: "The exact plan to follow starting today" },
+  { icon: "🔥", title: "BONUS: Bulk Buying Cheat Sheet", desc: "Cut your grocery bill on your very next shopping trip" },
+  { icon: "🔥", title: "BONUS: Lights Out Cooking Guide", desc: "Feed your family hot meals even without power" },
 ];
+
+const bonuses = [
+  { icon: "🔥", title: "The Bulk Buying Cheat Sheet", value: "$15 value — yours free", desc: "The exact products, quantities and stores to cut your grocery bill starting this week." },
+  { icon: "🔥", title: "The Lights Out Cooking Guide", value: "$15 value — yours free", desc: "How to feed your family hot meals even when the power goes out." },
+];
+
+export const BonusSection = () => (
+  <section className="section-padding">
+    <div className="section-container">
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-8 text-center">
+        Plus — You Also Get These FREE Bonuses:
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {bonuses.map((b) => (
+          <div key={b.title} className="bg-card rounded-xl p-4 border border-border flex gap-3 items-start">
+            <span className="text-2xl">{b.icon}</span>
+            <div>
+              <div className="font-semibold text-primary">{b.title}</div>
+              <div className="text-sm text-accent font-semibold">{b.value}</div>
+              <div className="text-sm text-muted-foreground">{b.desc}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
 export const WhatYouGet = () => (
   <section className="section-padding">
@@ -189,32 +222,18 @@ export const MeetEmily = () => (
 
 const testimonials = [
   {
-    name: "Megan L.",
-    location: "Austin, TX",
-    badge: "$60/month",
-    img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/Megan_L._Austin_TX_whwt1j.png",
-    quote: "I've cut my grocery bill by $60 a month just growing herbs on my apartment balcony. I can't believe I didn't start earlier. This guide made it so simple.",
-  },
-  {
-    name: "James R.",
+    name: "Jennifer M.",
     location: "Portland, OR",
-    badge: "$180/month",
+    badge: "Saving $200/month",
+    img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/Megan_L._Austin_TX_whwt1j.png",
+    quote: "We started with 4 days of food. After 3 months running this system, we have 6 weeks stored, herbs on the windowsill, and we spend $200 less a month. I don't dread the grocery store anymore.",
+  },
+  {
+    name: "Marcus T.",
+    location: "Chicago, IL",
+    badge: "0 → 30 days food security",
     img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/JAMES_R._PORTLAND_OR_fhtgvl.png",
-    quote: "Zero experience, but this made everything feel easy. I'm now growing 80% of my salad greens indoors. So grateful for this guide.",
-  },
-  {
-    name: "Ashley P.",
-    location: "Brooklyn, NY",
-    badge: "$120/month",
-    img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/TESTIMONIO_3_ASHLEY_P._BROOKLYN_NY_bk8is2.png",
-    quote: "I started growing herbs in my tiny studio. I feel healthier, more in control, and I'm saving money every single week.",
-  },
-  {
-    name: "David M.",
-    location: "Denver, CO",
-    badge: "$80/month",
-    img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631254/testimonio_4_mqaaay.png",
-    quote: "This guide helped me understand food independence. I've already reduced my grocery bill by $80/month. Best $12 I've ever spent.",
+    quote: "I live in a one-bedroom apartment. I started with a windowsill herb kit. Six weeks later I have a month of pantry food, fresh herbs every day, and 14 gallons of water under my bed.",
   },
 ];
 
@@ -237,7 +256,7 @@ export const TestimonialsSection = () => (
                 <div className="text-xs text-muted-foreground">{t.location}</div>
               </div>
               <span className="ml-auto bg-secondary/10 text-secondary text-xs font-bold px-2 py-1 rounded-full">
-                Saving {t.badge}
+                {t.badge}
               </span>
             </div>
             <div className="text-accent text-sm mb-2">⭐⭐⭐⭐⭐</div>
@@ -359,7 +378,7 @@ export const FinalCTA = () => (
         You don't need more information. You need a system. This is it.
       </p>
       <CTAButton className="!bg-accent !text-accent-foreground" />
-      <p className="text-white text-[14px] italic text-center mt-3">Every day you wait, food gets more expensive. Start today.</p>
+      <p className="text-white text-[14px] italic text-center mt-3">Groceries cost 47% more than 4 years ago. Every week you wait, you overpay more. Start tonight for $12.</p>
       <div className="trust-badges mt-3 text-primary-foreground/70">
         <span>🔒 Secure Payment</span>
         <span>✓ 7-Day Guarantee</span>
