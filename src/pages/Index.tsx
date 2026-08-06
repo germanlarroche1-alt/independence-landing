@@ -1,10 +1,13 @@
 import { StickyHeader, HeroSection } from "@/components/landing/HeroSection";
 import {
+  VillainSection,
   PainSection,
   MechanismSection,
   SocialProofNumbers,
+  NotAFarmerSection,
   WhatYouGet,
   BonusSection,
+  AccomplishSection,
   WhoThisIsFor,
   MeetEmily,
   TestimonialsSection,
@@ -20,11 +23,14 @@ const Index = () => (
   <>
     <StickyHeader />
     <HeroSection />
+    <VillainSection />
     <PainSection />
     <MechanismSection />
     <SocialProofNumbers />
+    <NotAFarmerSection />
     <WhatYouGet />
     <BonusSection />
+    <AccomplishSection />
     <WhoThisIsFor />
     <MeetEmily />
     <TestimonialsSection />
