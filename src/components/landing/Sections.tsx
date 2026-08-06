@@ -406,9 +406,12 @@ export const PricingSection = () => (
           <div className="text-sm italic text-secondary mt-1">Less than your daily coffee ☕</div>
         </div>
       </div>
+      <p className="text-sm text-foreground/80 max-w-xl mx-auto mb-4">
+        Americans spend $1,300/month on groceries. This system costs less than 1% of that — and starts cutting that bill this week. Less than one grocery trip. Less than your daily coffee.
+      </p>
       <CTAButton />
       <TrustBadges />
-      <p className="text-sm text-accent font-semibold mt-4">⚡ This special price ends in 48 hours.</p>
+      <p className="text-sm text-accent font-semibold mt-4">⚡ Every week you wait, you overpay more.</p>
     </div>
   </section>
 );
