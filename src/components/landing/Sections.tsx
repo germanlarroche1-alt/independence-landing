@@ -316,14 +316,24 @@ const testimonials = [
     location: "Portland, OR",
     badge: "Saving $200/month",
     img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/Megan_L._Austin_TX_whwt1j.png",
-    quote: "We started with 4 days of food. After 3 months running this system, we have 6 weeks stored, herbs on the windowsill, and we spend $200 less a month. I don't dread the grocery store anymore.",
+    quote: `We were spending $380 a month and still running out of food by week 3. I was stressed every time I opened the fridge — always worried we didn't have enough.
+
+After 3 months running this system, we have 6 weeks of food stored, herbs on the windowsill, and we spend $200 less a month.
+
+I don't dread the grocery store anymore.`,
   },
   {
     name: "Marcus T.",
     location: "Chicago, IL",
     badge: "0 → 30 days food security",
     img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/JAMES_R._PORTLAND_OR_fhtgvl.png",
-    quote: "I live in a one-bedroom apartment. I started with a windowsill herb kit. Six weeks later I have a month of pantry food, fresh herbs every day, and 14 gallons of water under my bed.",
+    quote: `I live in a one-bedroom apartment. No yard. No garden. Zero experience.
+
+I honestly thought this wasn't for me.
+
+Six weeks after starting — I have a full month of pantry food, fresh herbs every day, and 14 gallons of water stored under my bed.
+
+Best $12 I've ever spent.`,
   },
 ];
 
@@ -331,10 +341,10 @@ export const TestimonialsSection = () => (
   <section className="section-padding">
     <div className="section-container">
       <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-2 text-center">
-        Real Results From Real People
+        Real Families. Real Results. Real Food Security.
       </h2>
       <p className="text-muted-foreground text-center mb-8">
-        See how others are saving money and building food independence
+        See how families just like yours are taking back control.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {testimonials.map((t) => (
