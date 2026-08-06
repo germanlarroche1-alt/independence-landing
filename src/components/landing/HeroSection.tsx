@@ -30,8 +30,22 @@ export const HeroSection = () => {
           <span className="text-accent">Here's How to Fix That — Tonight.</span>
         </h1>
         <p className="text-base md:text-xl text-foreground/80 mb-4 max-w-2xl mx-auto">
-          The simple system that helps your family stop overpaying for groceries — and start building real food security at home. Starting tonight.
+          The grocery industry raised prices 47% in 4 years. Your paycheck didn't. This simple 7-day system helps your family take back control — starting tonight for just $12.
         </p>
+
+        <ul className="text-sm text-foreground/80 mb-4 space-y-1 inline-block text-left">
+          {[
+            "Build your first food foundation starting tonight",
+            "Complete the full system in just 7 days",
+            "Works for apartments, patios, and backyards",
+            "No gardening experience required",
+          ].map((item) => (
+            <li key={item} className="flex items-start gap-2">
+              <span className="text-secondary font-bold">✔</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
 
         <div className="bg-card rounded-xl p-5 mb-4 max-w-lg mx-auto border border-border">
           <p className="text-sm md:text-base mb-1">💰 People pay $49–$79 for guides like this...</p>
@@ -39,7 +53,7 @@ export const HeroSection = () => {
             But today you get the full system for just <span className="text-accent">$12</span>
           </p>
           <p className="text-sm text-accent font-semibold mt-2">
-            ⚡ This price is only available for the next 48 hours
+            ⚡ This price is only available for a limited time
           </p>
         </div>
 

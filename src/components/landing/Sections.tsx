@@ -22,6 +22,33 @@ const afterItems = [
   "Producing your own food at home",
 ];
 
+export const VillainSection = () => (
+  <section className="section-padding bg-background">
+    <div className="section-container text-center max-w-2xl mx-auto">
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-6">
+        The Grocery Store Is Not On Your Side.
+      </h2>
+      <p className="text-foreground/80 mb-4">
+        Prices up 47% in 4 years.<br />
+        Shelves empty during storms.<br />
+        Supply chains breaking without warning.
+      </p>
+      <p className="text-foreground/80 mb-4">
+        The average American family spends $1,300/month on groceries — and still only has 3 days of food at home.
+      </p>
+      <p className="font-semibold text-primary mb-4">That's not bad luck. That's dependency.</p>
+      <p className="text-foreground/80 mb-4">
+        Food Independence isn't about fear.<br />
+        It's about having a plan before you need one.
+      </p>
+      <p className="text-foreground/80">
+        Most families don't have a plan.<br />
+        You're about to change that.
+      </p>
+    </div>
+  </section>
+);
+
 export const PainSection = () => (
   <section className="section-padding bg-card">
     <div className="section-container">
@@ -52,6 +79,23 @@ export const PainSection = () => (
           ))}
         </div>
       </div>
+    </div>
+  </section>
+);
+
+export const NotAFarmerSection = () => (
+  <section className="section-padding bg-card">
+    <div className="section-container text-center max-w-2xl mx-auto">
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-6">
+        This Isn't About Becoming a Farmer.
+      </h2>
+      <p className="text-foreground/80 mb-4">
+        You don't need acres of land.<br />
+        You don't need expensive equipment.<br />
+        You don't need years of experience.
+      </p>
+      <p className="font-semibold text-primary mb-4">You need a system.</p>
+      <p className="text-foreground/80">That's exactly what you'll build in 7 days.</p>
     </div>
   </section>
 );
@@ -144,9 +188,12 @@ export const WhatYouGet = () => (
   <section className="section-padding">
     <div className="section-container">
       <img src={IMAGES.mockup} alt="The 7-Day Food Independence Starter System ebook" loading="lazy" className="w-64 md:w-80 mx-auto mb-8" />
-      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-8 text-center">
-        What's Inside the 7-Day Food Independence Starter System
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-3 text-center">
+        Here's Everything You'll Build in Just 7 Days
       </h2>
+      <p className="text-foreground/80 text-center max-w-2xl mx-auto mb-8">
+        Every day develops a different part of your system. By the end you'll have something most families never build: A real food plan. That actually works.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {features.map((f) => (
           <div key={f.title} className="bg-card rounded-xl p-4 pl-4 md:pl-4 border border-border flex gap-3 items-center md:items-start">
@@ -162,20 +209,49 @@ export const WhatYouGet = () => (
   </section>
 );
 
+const accomplishItems = [
+  "Know exactly how many days of food your family has — today",
+  "Build your first real emergency food foundation",
+  "Organize your pantry like a system, not a storage room",
+  "Spend smarter at the grocery store starting this week",
+  "Start growing food in almost any space",
+  "Reduce what you spend — without reducing what you eat",
+  "Feel more prepared with every single week that passes",
+];
+
+export const AccomplishSection = () => (
+  <section className="section-padding">
+    <div className="section-container">
+      <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-6 text-center">
+        What You'll Accomplish
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-2xl mx-auto">
+        {accomplishItems.map((item) => (
+          <div key={item} className="flex items-start gap-2">
+            <span className="text-secondary font-bold mt-0.5">✓</span>
+            <span className="text-sm">{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 const forYouItems = [
-  "You're tired of paying $400–$500/month for groceries",
-  "You live in an apartment or small home with limited space",
-  "You're new to food independence and need step-by-step guidance",
-  "You're concerned about food quality and supply chains",
-  "You want real results fast, not theory",
-  "You're ready to take control of your food and finances",
+  "You're tired of spending $400–$500/month on groceries",
+  "You live in an apartment, townhouse, or small home",
+  "You're concerned about rising prices and supply chains",
+  "You want real results fast — not theory",
+  "You want more control over what your family eats",
+  "You believe your family deserves better than 3 days of security",
+  "You're ready to stop depending on a system you can't control",
 ];
 
 export const WhoThisIsFor = () => (
   <section className="section-padding bg-card">
     <div className="section-container">
       <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-6 text-center">
-        This Is For You If...
+        This Is For You If You're Done Feeling Dependent.
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-2xl mx-auto">
         {forYouItems.map((item) => (
@@ -196,6 +272,16 @@ export const MeetEmily = () => (
         <img src={IMAGES.emily} alt="Emily Carter" loading="lazy" className="w-full md:w-1/3 rounded-xl mb-6 md:mb-0" />
         <div className="flex-1">
           <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-4">Meet Emily Carter</h2>
+          <div className="bg-card rounded-xl p-4 border-l-4 border-accent mb-6 italic text-sm text-foreground/70 whitespace-pre-line">
+            {`"I used to spend $340 a month on groceries for a family of three.
+
+Every week, prices went up.
+Every week, I felt less in control.
+Every week, I wondered what would happen if something went wrong.
+
+Then I built this system.
+In 7 days, everything changed."`}
+          </div>
           <p className="text-foreground/80 mb-4">
             Hi, I'm Emily Carter. For the past 8 years I've been helping families take control of their food — reducing grocery bills, building simple food systems at home, and becoming less dependent on stores and supply chains. I started from a small apartment balcony. Today I've helped 5,000+ families do the same.
           </p>
@@ -214,6 +300,10 @@ export const MeetEmily = () => (
               </div>
             ))}
           </div>
+          <div className="mt-6 text-center">
+            <CTAButton />
+            <p className="text-sm text-accent font-semibold mt-3">⚡ Limited time price. Currently: $12.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -226,14 +316,24 @@ const testimonials = [
     location: "Portland, OR",
     badge: "Saving $200/month",
     img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/Megan_L._Austin_TX_whwt1j.png",
-    quote: "We started with 4 days of food. After 3 months running this system, we have 6 weeks stored, herbs on the windowsill, and we spend $200 less a month. I don't dread the grocery store anymore.",
+    quote: `We were spending $380 a month and still running out of food by week 3. I was stressed every time I opened the fridge — always worried we didn't have enough.
+
+After 3 months running this system, we have 6 weeks of food stored, herbs on the windowsill, and we spend $200 less a month.
+
+I don't dread the grocery store anymore.`,
   },
   {
     name: "Marcus T.",
     location: "Chicago, IL",
     badge: "0 → 30 days food security",
     img: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_400,h_400,c_fill,g_face/v1774631253/JAMES_R._PORTLAND_OR_fhtgvl.png",
-    quote: "I live in a one-bedroom apartment. I started with a windowsill herb kit. Six weeks later I have a month of pantry food, fresh herbs every day, and 14 gallons of water under my bed.",
+    quote: `I live in a one-bedroom apartment. No yard. No garden. Zero experience.
+
+I honestly thought this wasn't for me.
+
+Six weeks after starting — I have a full month of pantry food, fresh herbs every day, and 14 gallons of water stored under my bed.
+
+Best $12 I've ever spent.`,
   },
 ];
 
@@ -241,10 +341,10 @@ export const TestimonialsSection = () => (
   <section className="section-padding">
     <div className="section-container">
       <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-2 text-center">
-        Real Results From Real People
+        Real Families. Real Results. Real Food Security.
       </h2>
       <p className="text-muted-foreground text-center mb-8">
-        See how others are saving money and building food independence
+        See how families just like yours are taking back control.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {testimonials.map((t) => (
@@ -260,7 +360,7 @@ export const TestimonialsSection = () => (
               </span>
             </div>
             <div className="text-accent text-sm mb-2">⭐⭐⭐⭐⭐</div>
-            <p className="text-sm text-foreground/80 italic">"{t.quote}"</p>
+            <p className="text-sm text-foreground/80 italic whitespace-pre-line">"{t.quote}"</p>
           </div>
         ))}
       </div>
@@ -306,9 +406,12 @@ export const PricingSection = () => (
           <div className="text-sm italic text-secondary mt-1">Less than your daily coffee ☕</div>
         </div>
       </div>
+      <p className="text-sm text-foreground/80 max-w-xl mx-auto mb-4">
+        Americans spend $1,300/month on groceries. This system costs less than 1% of that — and starts cutting that bill this week. Less than one grocery trip. Less than your daily coffee.
+      </p>
       <CTAButton />
       <TrustBadges />
-      <p className="text-sm text-accent font-semibold mt-4">⚡ This special price ends in 48 hours.</p>
+      <p className="text-sm text-accent font-semibold mt-4">⚡ Every week you wait, you overpay more.</p>
     </div>
   </section>
 );
@@ -335,7 +438,7 @@ export const GuaranteeSection = () => (
 const faqs = [
   { q: "Can I use this if I live in a small apartment?", a: "Absolutely. This system was specifically designed for small spaces. You only need a windowsill, a few pots, and a small shelf for storage. Most of our 5,000+ readers started in apartments smaller than yours." },
   { q: "Do I need a big yard or land?", a: "No. This system works in any space — apartment, balcony, or a single windowsill. Most families start with just a few pots and a shelf." },
-  { q: "How much can I realistically save?", a: "Most families save between $150–$300/month after 90 days. You start seeing results in week 1." },
+  { q: "How much can I realistically save?", a: "Many families report saving $150–$300/month after 90 days of running the system consistently. Results vary based on family size and current spending — but most see savings starting in week 1." },
   { q: "Is it beginner-friendly?", a: "Completely. The system was designed for people with zero experience. Step-by-step, day by day." },
   { q: "What format do I receive?", a: "Instant digital access to a PDF guide. Download it immediately after purchase." },
   { q: "When will I see results?", a: "Day 1 you build your first 3 days of food security. Week 1 you have your first crop planted. Week 3 you start seeing grocery savings." },
@@ -368,23 +471,49 @@ export const FAQSection = () => {
 export const FinalCTA = () => (
   <section className="section-padding bg-primary text-primary-foreground">
     <div className="section-container text-center">
-      <h2 className="font-heading text-2xl md:text-4xl font-bold mb-4">
-        Start Building Your Food Independence Tonight
+      <h2 className="font-heading text-2xl md:text-4xl font-bold mb-6">
+        Start Building Your Food Independence Tonight.
       </h2>
-      <p className="opacity-90 mb-4">
-        Why pay $49–$79 for the same information? Get the full system today for just $12.
-      </p>
-      <p className="font-bold mb-6">
-        You don't need more information. You need a system. This is it.
-      </p>
+      <div className="opacity-90 mb-6 max-w-xl mx-auto space-y-4">
+        <p>
+          You don't need more information.<br />
+          You need a plan.<br />
+          This system gives you one.
+        </p>
+        <p>
+          Start with one grocery trip.<br />
+          One week.<br />
+          One simple system.<br />
+          One stronger family.
+        </p>
+        <p>
+          You're not preparing for the end of the world.<br />
+          You're preparing to take better care of your family.
+        </p>
+        <p>
+          One day.<br />
+          One grocery trip.<br />
+          One small habit at a time.
+        </p>
+        <p>
+          Imagine opening your pantry next week and knowing your family has a real food foundation already in place.
+        </p>
+        <p>
+          No panic.<br />
+          No guesswork.<br />
+          Just a simple system that works.
+        </p>
+        <p>
+          Your next grocery trip could be the first step toward spending smarter, building food security, and taking back control of your family's food.
+        </p>
+      </div>
       <CTAButton className="!bg-accent !text-accent-foreground" />
-      <p className="text-white text-[14px] italic text-center mt-3">Groceries cost 47% more than 4 years ago. Every week you wait, you overpay more. Start tonight for $12.</p>
       <div className="trust-badges mt-3 text-primary-foreground/70">
         <span>🔒 Secure Payment</span>
         <span>✓ 7-Day Guarantee</span>
         <span>⭐ 5,000+ Happy Readers</span>
       </div>
-      <p className="text-sm font-semibold mt-4 text-accent">⚡ This special price ends in 48 hours.</p>
+      <p className="text-sm font-semibold mt-4 text-accent">⚡ Groceries cost 47% more than 4 years ago. Every week you wait, you overpay more. Start tonight for $12.</p>
       <p className="mt-6 opacity-80 italic max-w-xl mx-auto text-sm">
         Tonight… you could already have 3 full days of real food sitting in your home. No stress. No panic. Just knowing… you're covered.
       </p>
