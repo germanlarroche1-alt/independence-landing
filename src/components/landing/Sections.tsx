@@ -256,7 +256,7 @@ export const TestimonialsSection = () => (
                 <div className="text-xs text-muted-foreground">{t.location}</div>
               </div>
               <span className="ml-auto bg-secondary/10 text-secondary text-xs font-bold px-2 py-1 rounded-full">
-                Saving {t.badge}
+                {t.badge}
               </span>
             </div>
             <div className="text-accent text-sm mb-2">⭐⭐⭐⭐⭐</div>
@@ -378,7 +378,7 @@ export const FinalCTA = () => (
         You don't need more information. You need a system. This is it.
       </p>
       <CTAButton className="!bg-accent !text-accent-foreground" />
-      <p className="text-white text-[14px] italic text-center mt-3">Every day you wait, food gets more expensive. Start today.</p>
+      <p className="text-white text-[14px] italic text-center mt-3">Groceries cost 47% more than 4 years ago. Every week you wait, you overpay more. Start tonight for $12.</p>
       <div className="trust-badges mt-3 text-primary-foreground/70">
         <span>🔒 Secure Payment</span>
         <span>✓ 7-Day Guarantee</span>
