@@ -30,7 +30,7 @@ export const HeroSection = () => {
           <span className="text-accent">Here's How to Fix That — Tonight.</span>
         </h1>
         <p className="text-base md:text-xl text-foreground/80 mb-4 max-w-2xl mx-auto">
-          The grocery industry raised prices 47% in 4 years. Your paycheck didn't. This simple 7-day system helps your family take back control — starting tonight for just $12.
+          While grocery prices kept climbing, most family budgets didn't. This simple 7-day system helps your family take back control — starting tonight for just $12.
         </p>
 
         <ul className="text-sm text-foreground/80 mb-4 space-y-1 inline-block text-left">
@@ -60,21 +60,13 @@ export const HeroSection = () => {
         <CTAButton />
         <TrustBadges />
 
-        <div className="mt-5">
-          <p className="text-sm text-accent font-medium mb-3">▶ Watch how this works in 2 minutes</p>
-          <div className="relative overflow-hidden rounded-xl shadow-lg" style={{ paddingBottom: "56.25%" }}>
-            <iframe
-              src="https://www.youtube.com/embed/zg9wnzujM60?rel=0&modestbranding=1"
-              className="absolute inset-0 w-full h-full"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              loading="lazy"
-              title="How the Food Independence System works"
-            />
-          </div>
-          <p className="text-secondary text-[14px] text-center mt-3">Trusted by 5,000+ families</p>
+        <div className="mt-6 max-w-lg mx-auto">
+          <img
+            src="https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1000/v1786000609/food_independence_system/food_independence_mockup_7day.png"
+            alt="The 7-Day Food Independence Starter System"
+            className="w-full rounded-xl shadow-lg"
+            loading="eager"
+          />
         </div>
       </div>
     </section>

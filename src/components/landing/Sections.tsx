@@ -26,7 +26,7 @@ export const VillainSection = () => (
   <section className="section-padding bg-background">
     <div className="section-container text-center max-w-2xl mx-auto">
       <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-6">
-        The Grocery Store Is Not On Your Side.
+        Most Families Depend on a System They Can't Control.
       </h2>
       <p className="text-foreground/80 mb-4">
         Prices up 47% in 4 years.<br />
@@ -273,14 +273,13 @@ export const MeetEmily = () => (
         <div className="flex-1">
           <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary mb-4">Meet Emily Carter</h2>
           <div className="bg-card rounded-xl p-4 border-l-4 border-accent mb-6 italic text-sm text-foreground/70 whitespace-pre-line">
-            {`"I used to spend $340 a month on groceries for a family of three.
+            {`"I used to spend about $340 a month on groceries for my family of three.
 
-Every week, prices went up.
-Every week, I felt less in control.
-Every week, I wondered what would happen if something went wrong.
+Every trip to the grocery store cost more, and I felt like I had less control over how we fed my family.
 
-Then I built this system.
-In 7 days, everything changed."`}
+That's when I decided to build a simple system instead of relying completely on the grocery store.
+
+That simple system eventually became the 7-Day Food Independence Starter System."`}
           </div>
           <p className="text-foreground/80 mb-4">
             Hi, I'm Emily Carter. For the past 8 years I've been helping families take control of their food — reducing grocery bills, building simple food systems at home, and becoming less dependent on stores and supply chains. I started from a small apartment balcony. Today I've helped 5,000+ families do the same.
@@ -403,11 +402,11 @@ export const PricingSection = () => (
         <div className="bg-accent/10 rounded-lg p-4 mb-4">
           <div className="text-sm text-muted-foreground">Your Price Today:</div>
           <div className="font-heading text-4xl font-bold text-accent">ONLY $12</div>
-          <div className="text-sm italic text-secondary mt-1">Less than your daily coffee ☕</div>
+          <div className="text-sm italic text-secondary mt-1">Less than one trip to the grocery store.</div>
         </div>
       </div>
       <p className="text-sm text-foreground/80 max-w-xl mx-auto mb-4">
-        Americans spend $1,300/month on groceries. This system costs less than 1% of that — and starts cutting that bill this week. Less than one grocery trip. Less than your daily coffee.
+        Americans spend $1,300/month on groceries. This system costs less than 1% of that — and starts cutting that bill this week. Less than one trip to the grocery store.
       </p>
       <CTAButton />
       <TrustBadges />
@@ -514,9 +513,6 @@ export const FinalCTA = () => (
         <span>⭐ 5,000+ Happy Readers</span>
       </div>
       <p className="text-sm font-semibold mt-4 text-accent">⚡ Groceries cost 47% more than 4 years ago. Every week you wait, you overpay more. Start tonight for $12.</p>
-      <p className="mt-6 opacity-80 italic max-w-xl mx-auto text-sm">
-        Tonight… you could already have 3 full days of real food sitting in your home. No stress. No panic. Just knowing… you're covered.
-      </p>
     </div>
   </section>
 );
