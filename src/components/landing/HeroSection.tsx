@@ -62,7 +62,7 @@ export const HeroSection = () => {
 
         <div className="mt-6 max-w-lg mx-auto">
           <img
-            src="https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1000/v1786000609/food_independence_system/food_independence_mockup_7day.png"
+            src="https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1000/v1786423239/food-independence-system/fis_ebook_mockup_softcover.webp"
             alt="The 7-Day Food Independence Starter System"
             className="w-full rounded-xl shadow-lg"
             loading="eager"

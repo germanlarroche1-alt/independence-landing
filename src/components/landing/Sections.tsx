@@ -3,7 +3,7 @@ import { CTAButton, TrustBadges } from "./CTAButton";
 const IMAGES = {
   dolor: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1000/v1774631256/IMAGEN_2_DOLOR_ioot31.png",
   sistema23: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1000/v1774631256/IMAGEN_3_SISTEMA_23_ezex9d.png",
-  mockup: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1000/v1774632598/The_7_days_food_independence_msk0mq.png",
+  mockup: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1000/v1786423239/food-independence-system/fis_ebook_mockup_softcover.webp",
   emily: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1200/v1774631256/IMAGEN_1_EMILY_CARTER_tr7sew.png",
   proceso: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1000/v1774631254/IMAGEN_5_PROCESO_lobccp.png",
   resultado: "https://res.cloudinary.com/dljy2fp3w/image/upload/f_auto,q_auto,w_1000/v1774631256/IMAGEN_4_RESULTADO_DESPENSA_agahif.png",
