@@ -35,10 +35,10 @@ export const HeroSection = () => {
 
         <ul className="text-sm text-foreground/80 mb-4 space-y-1 inline-block text-left">
           {[
-            "Build your first food foundation starting tonight",
-            "Complete the full system in just 7 days",
-            "Works for apartments, patios, and backyards",
-            "No gardening experience required",
+            "Build 7 days of real food security — starting tonight",
+            "One grocery run, $23, done in under an hour",
+            "Works in any home — apartment, house, any space",
+            "Save $200–$350 per month with the bulk buying system",
           ].map((item) => (
             <li key={item} className="flex items-start gap-2">
               <span className="text-secondary font-bold">✔</span>
@@ -48,12 +48,12 @@ export const HeroSection = () => {
         </ul>
 
         <div className="bg-card rounded-xl p-5 mb-4 max-w-lg mx-auto border border-border">
-          <p className="text-sm md:text-base mb-1">💰 People pay $49–$79 for guides like this...</p>
+          <p className="text-sm md:text-base mb-1">💰 Families running this system save $200–$350/month on groceries.</p>
           <p className="text-lg md:text-xl font-bold text-primary">
-            But today you get the full system for just <span className="text-accent">$12</span>
+            The complete 7-day system — just <span className="text-accent">$12</span>. Instant download.
           </p>
           <p className="text-sm text-accent font-semibold mt-2">
-            ⚡ This price is only available for a limited time
+            ⚡ Start building your food foundation tonight.
           </p>
         </div>
 
