@@ -348,13 +348,12 @@ export const TestimonialsSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {testimonials.map((t) => (
           <div key={t.name} className="bg-card rounded-xl p-5 border border-border">
-            <div className="flex items-center gap-3 mb-3">
-              <img src={t.img} alt={t.name} loading="lazy" className="w-14 h-14 rounded-full object-cover" />
+            <div className="flex items-center justify-between mb-3">
               <div>
                 <div className="font-semibold text-primary">{t.name}</div>
                 <div className="text-xs text-muted-foreground">{t.location}</div>
               </div>
-              <span className="ml-auto bg-secondary/10 text-secondary text-xs font-bold px-2 py-1 rounded-full">
+              <span className="ml-2 bg-secondary/10 text-secondary text-xs font-bold px-2 py-1 rounded-full">
                 {t.badge}
               </span>
             </div>
@@ -393,11 +392,11 @@ export const PricingSection = () => (
       </h2>
       <div className="bg-background rounded-xl p-6 border border-border max-w-md mx-auto mb-6">
         <div className="space-y-2 text-left text-sm mb-4">
-          <div className="flex justify-between"><span>The 7-Day Food Independence Starter System</span><span className="line-through text-muted-foreground">$49</span></div>
-          <div className="flex justify-between"><span>The Bulk Buying Cheat Sheet (BONUS)</span><span className="line-through text-muted-foreground">$15</span></div>
-          <div className="flex justify-between"><span>The Lights Out Cooking Guide (BONUS)</span><span className="line-through text-muted-foreground">$15</span></div>
+          <div className="flex justify-between items-center"><span>✓ The 7-Day Food Independence Starter System</span><span className="text-secondary font-semibold">Included</span></div>
+          <div className="flex justify-between items-center"><span>✓ The Bulk Buying Cheat Sheet</span><span className="text-secondary font-semibold">Included</span></div>
+          <div className="flex justify-between items-center"><span>✓ The Lights Out Cooking Guide</span><span className="text-secondary font-semibold">Included</span></div>
           <hr className="border-border" />
-          <div className="flex justify-between font-semibold"><span>Total Real-World Value:</span><span>$79+</span></div>
+          <div className="flex justify-between font-semibold"><span>Everything above:</span><span className="text-accent">$12 — Instant Download</span></div>
         </div>
         <div className="bg-accent/10 rounded-lg p-4 mb-4">
           <div className="text-sm text-muted-foreground">Your Price Today:</div>
